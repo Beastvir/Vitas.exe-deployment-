@@ -1,0 +1,116 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+  background-color: #050505;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  background-color: #050505;
+  /* Black background */
+}
+
+.content-wrapper {
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #a1a1aa;
+  /* Light gray */
+  margin-bottom: 3rem;
+}
+
+.portal-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 160px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+  border: none;
+}
+
+.portal-card:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.patient-portal {
+  background-color: #2dedda;
+  /* Cyan/Turquoise */
+  color: #000;
+}
+
+.doctor-portal {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: white;
+}
+
+.portal-card .icon {
+  margin-bottom: 1rem;
+  stroke-width: 2px;
+}
+
+.help-button {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background: #1f1f1f;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a1a1aa;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.help-button:hover {
+  background-color: #333;
+  color: white;
+}

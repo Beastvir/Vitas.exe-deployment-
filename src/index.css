@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dark Theme Colors */
+  --color-background: hsl(0 0% 2%);
+  --color-foreground: hsl(0 0% 100%);
+
+  --color-card: hsl(224 7% 7%);
+  --color-card-foreground: hsl(0 0% 100%);
+
+  --color-popover: hsl(224 7% 7%);
+  --color-popover-foreground: hsl(0 0% 100%);
+
+  --color-primary: hsl(174 96% 56%);
+  --color-primary-foreground: hsl(0 0% 0%);
+
+  --color-secondary: hsl(240 3.7% 15.9%);
+  --color-secondary-foreground: hsl(0 0% 98%);
+
+  --color-muted: hsl(240 3.7% 15.9%);
+  --color-muted-foreground: hsl(240 5% 64.9%);
+
+  --color-accent: hsl(240 3.7% 15.9%);
+  --color-accent-foreground: hsl(0 0% 98%);
+
+  --color-destructive: hsl(0 62.8% 30.6%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+
+  --color-border: hsl(240 3.7% 15.9%);
+  --color-input: hsl(240 3.7% 15.9%);
+  --color-ring: hsl(174 96% 56%);
+
+  --radius: 0.5rem;
+}
+
+/* Utilities not automatically generated or overrides */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
+
+/* Add support for border-border etc usages if needed by mapping generic names */
+/* In v4, --color-* automatically creates bg-*, text-*, border-* utilities */
